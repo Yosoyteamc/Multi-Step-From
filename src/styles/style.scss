@@ -1,0 +1,72 @@
+@use 'reset';
+@use 'components/ViewStepOptions';
+@use 'components/StepOption';
+@use 'components/PersonalInfo';
+@use 'components/FormSubscription';
+@use 'components/Buttons';
+@use 'components/SelectPlan';
+@use 'components/AddOns';
+@use 'components/FinishingUp';
+
+@font-face {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+font-family: "Ubuntu";
+font-style: normal;
+font-weight: 600;
+src: url("../assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+
+@font-face {
+font-family: "Ubuntu";
+font-style: normal;
+font-weight: 900;
+src: url("../assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+
+:root {
+    font-family: var(--Ubuntu);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    background-color: var(--Alabaster);
+  
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-synthesis: none;
+
+    //Font
+
+    --Ubuntu: 'Ubuntu', sans-serif;
+
+    // Primary
+
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+
+    // Neutral
+
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    min-height: 660px;
+    height: 130vh;
+;
+
+}

@@ -1,0 +1,39 @@
+.form-register{
+    display: flex;
+    flex-direction: column;
+    &-labels{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__label{
+        font-size: .8rem;
+        font-weight: 600;
+        color: var(--Marine-blue);
+        margin-bottom: 10px;
+        &--error{
+            color: var(--Strawberry-red);
+            font-size: .8rem;
+        }
+    }
+    &__input{
+        border: 1px solid var(--Light-gray);
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: .9rem;
+        &:hover{
+            cursor: pointer;
+        }
+        &:active, &:focus{
+            outline: 1px solid var(--Purplish-blue);
+        }
+        &::placeholder{
+            font-family: var(--Ubuntu);
+            font-weight: 600;
+        }
+        &--error{
+            border: 1px solid var(--Strawberry-red);
+        }
+    }
+}

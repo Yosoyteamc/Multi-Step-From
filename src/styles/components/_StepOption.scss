@@ -1,0 +1,18 @@
+.option{
+    &__number{
+        border: 2px solid var(--White);
+        border-radius: 100%;
+        font-weight: bold;
+        margin: 0 7.5px;
+        padding: 10px 15px;
+        &--selected{
+            background-color: var(--Light-blue);
+            border: none;
+            color: var(--Marine-blue);
+            padding: 11px 16px;
+        }
+    }
+    &__text{
+        display: none;
+    }
+}

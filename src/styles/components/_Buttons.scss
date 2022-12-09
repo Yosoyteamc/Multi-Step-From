@@ -1,0 +1,46 @@
+.buttons-container{
+    width: calc(100vw - 30px);
+    min-width: 300px;
+    min-height: 70px;
+    padding: 0 15px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+
+    -webkit-box-shadow: 1px 1px 10px -3px  var(--Cool-gray);
+    -moz-box-shadow: 1px 1px 10px -3px  var(--Cool-gray);
+    box-shadow: 1px 1px 10px -3px  var(--Cool-gray);
+
+    .btn{
+        height: 40px;
+        min-width: 98px;
+        font-size: .9rem;
+        &--primary{
+            background-color: var(--Marine-blue);
+            color: var(--White);
+            border: none;
+            border-radius: 5px;
+            font-family: var(--Ubuntu);
+            font-weight: 600;
+            cursor: pointer;
+            &:hover{
+                background-color: var(--Purplish-blue);
+            }
+        }
+        &--secondary{
+            min-width: auto;
+            border: none;
+            background-color: var(--White);
+            color: var(--Cool-gray);
+            font-family: var(--Ubuntu);
+            font-weight: 900;
+            cursor: pointer;
+            &:hover{
+               color: var(--Marine-blue);
+            }
+        }
+    }
+}

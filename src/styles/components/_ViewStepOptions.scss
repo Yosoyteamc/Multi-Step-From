@@ -1,0 +1,15 @@
+.navbar{
+    background-image: url(../assets/images/bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &-content{
+        min-height: 175px;
+        padding: 55px 15px 0 15px;
+        margin: 0 auto;
+        width: clamp(300px, calc(100vw - 30px), 500px);
+        display: flex;
+        justify-content: center;
+        color: var(--White);
+    }
+}
