@@ -34,15 +34,15 @@ const Subscription = () => {
                 return;
             }
             setMessage("Next Step");
-            navigate('/subscription/pick-add-ons');
+            navigate('/Multi-Step-From/subscription/pick-add-ons');
         }
         if(step === 2) {
             setMessage("Confirm");
-            navigate('/subscription/confirm');
+            navigate('/Multi-Step-From/subscription/confirm');
         };
         if(step === 3) {
             setMessage("Confirm");
-            navigate('/subscription/success');
+            navigate('/Multi-Step-From/subscription/success');
             setSuccess(true);
         };
         setBackActive(true);
@@ -54,17 +54,17 @@ const Subscription = () => {
             setBackActive(false)
         };
         if(step === 1){
-            navigate('/subscription/register');
+            navigate('/Multi-Step-From/subscription/register');
             setBackActive(false)
             setStepOne(true);
         };
         if(step === 2){
             setMessage("Next Step");
-            navigate('/subscription/plans');
+            navigate('/Multi-Step-From/subscription/plans');
         }
         if(step === 3){
             setMessage("Next Step");
-            navigate('/subscription/pick-add-ons');
+            navigate('/Multi-Step-From/subscription/pick-add-ons');
         }
         step > 0 && setStep(step - 1);
     }

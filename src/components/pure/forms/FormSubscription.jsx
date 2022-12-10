@@ -32,7 +32,7 @@ const FormSubscription = () => {
                 actions.setSubmitting(false);
                 actions.resetForm();
                 setSubscriptionInfo(fields)
-                navigate('/subscription/plans');
+                navigate('/Multi-Step-From/subscription/plans');
                 }
             }
         >
