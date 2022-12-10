@@ -13,7 +13,7 @@ function App() {
   <>
     <SubscriptionContextProvider>
     <Routes>
-      {/* <Route path="/Multi-Step-From/" element={<Navigate to="/Multi-Step-From/subscription/register" replace={true}></Navigate>}/> */}
+      <Route path="/Multi-Step-From/" element={<Navigate to="/Multi-Step-From/subscription/register" replace={true}></Navigate>}/>
       <Route path="/Multi-Step-From/subscription" element={<Navigate to="/Multi-Step-From/subscription/register" replace={true}></Navigate>}/>
       <Route exact path="/Multi-Step-From/subscription" element={ <Subscription/> }>
         <Route index path="register" element={<PersonalInfo/>}/>

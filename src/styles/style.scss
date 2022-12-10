@@ -1,6 +1,5 @@
 @use 'reset';
 @use 'components/ViewStepOptions';
-@use 'components/StepOption';
 @use 'components/PersonalInfo';
 @use 'components/FormSubscription';
 @use 'components/Buttons';
@@ -67,6 +66,28 @@ src: url("../assets/fonts/Ubuntu-Bold.ttf") format("truetype");
 body{
     min-height: 660px;
     height: 130vh;
-;
+    @media screen and (min-width: 1024px) {
+        min-height: 100vh;
+        height: 100vh;
+        display: flex;
+        align-items: center; 
+        justify-content: center;       
+    }
+}
 
+.App{
+   @media screen and (min-width: 1024px) {
+        width: 900px;
+        padding: 14px;
+        margin: auto;
+        display: flex;
+        background-color: var(--White);
+        min-height: 600px;
+        align-items: center;
+        border-radius: 10px;
+        position: relative;
+        -webkit-box-shadow: 1px 1px 10px -3px  var(--Cool-gray);
+        -moz-box-shadow: 1px 1px 10px -3px  var(--Cool-gray);
+        box-shadow: 1px 1px 10px -3px  var(--Cool-gray);
+   }
 }

@@ -13,7 +13,7 @@ const Success = () => {
     }, []);
 
     return (
-        <section className='container'>
+        <section className='container container--success'>
             <img className='icon' src={successIcon} alt='success Icon'/>
             <h1 className='title title--center'>Thank you!</h1>
             <p className='details details--center'>Thanks for confirming your subscription!

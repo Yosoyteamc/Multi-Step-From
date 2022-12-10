@@ -6,6 +6,6 @@ import './styles/style.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
-        <App />
+        <App className= "App" />
     </BrowserRouter>
 )

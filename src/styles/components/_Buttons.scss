@@ -14,6 +14,16 @@
     -moz-box-shadow: 1px 1px 10px -3px  var(--Cool-gray);
     box-shadow: 1px 1px 10px -3px  var(--Cool-gray);
 
+    @media screen and (min-width: 1024px) {
+        width: 50%;
+        min-width: 0;
+        padding: 0;
+        right: 79px;
+        position: absolute;
+        bottom: 14px;
+        box-shadow: none;
+    }
+
     .btn{
         height: 40px;
         min-width: 98px;
