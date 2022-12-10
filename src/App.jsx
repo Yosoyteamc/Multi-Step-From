@@ -13,17 +13,17 @@ function App() {
   <>
     <SubscriptionContextProvider>
     <Routes>
-      <Route path="/" element={<Navigate to="/subscription/register" replace={true}></Navigate>}/>
-      <Route path="/subscription" element={<Navigate to="/subscription/register" replace={true}></Navigate>}/>
+      <Route path="/" element={<Navigate to="subscription/register" replace={true}></Navigate>}/>
+      <Route path="subscription" element={<Navigate to="subscription/register" replace={true}></Navigate>}/>
       <Route exact path="subscription" element={ <Subscription/> }>
         <Route index path="register" element={<PersonalInfo/>}/>
         <Route path="plans" element={<SelectPlan/>}/>
         <Route path="pick-add-ons" element={<PickAddOns/>}/>
         <Route path="confirm" element={<FinishingUp/>}/>
         <Route path="success" element={<Success/>}/>
-        <Route path="*" element={<Navigate to="/subscription/register" replace={true}></Navigate>} />
+        <Route path="*" element={<Navigate to="subscription/register" replace={true}></Navigate>} />
       </Route>
-      <Route path="*" element={<Navigate to="/subscription/register" replace={true}></Navigate>} />
+      <Route path="*" element={<Navigate to="subscription/register" replace={true}></Navigate>} />
     </Routes>
     </SubscriptionContextProvider>
   </>
