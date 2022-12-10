@@ -23,7 +23,7 @@ function App() {
         <Route path="success" element={<Success/>}/>
         <Route path="*" element={<Navigate to="/subscription/register" replace={true}></Navigate>} />
       </Route>
-      <Route path="*" element={<div>Not Found 404</div>} />
+      <Route path="*" element={<Navigate to="/subscription/register" replace={true}></Navigate>} />
     </Routes>
     </SubscriptionContextProvider>
   </>
