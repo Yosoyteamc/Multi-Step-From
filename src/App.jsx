@@ -13,17 +13,17 @@ function App() {
   <>
     <SubscriptionContextProvider>
     <Routes>
-      <Route path="/" element={<Navigate to="subscription/register" replace={true}></Navigate>}/>
-      <Route path="subscription" element={<Navigate to="subscription/register" replace={true}></Navigate>}/>
-      <Route exact path="subscription" element={ <Subscription/> }>
-        <Route index path="register" element={<PersonalInfo/>}/>
-        <Route path="plans" element={<SelectPlan/>}/>
-        <Route path="pick-add-ons" element={<PickAddOns/>}/>
-        <Route path="confirm" element={<FinishingUp/>}/>
-        <Route path="success" element={<Success/>}/>
-        <Route path="*" element={<Navigate to="subscription/register" replace={true}></Navigate>} />
+      <Route index path="/Multi-Step-From/" element={<Navigate to="Multi-Step-From/subscription/register" replace={true}></Navigate>}/>
+      <Route path="/Multi-Step-From/subscription" element={<Navigate to="Multi-Step-From/subscription/register" replace={true}></Navigate>}/>
+      <Route exact path="Multi-Step-From/subscription" element={ <Subscription/> }>
+        <Route index path="Multi-Step-From/register" element={<PersonalInfo/>}/>
+        <Route path="Multi-Step-From/plans" element={<SelectPlan/>}/>
+        <Route path="Multi-Step-From/pick-add-ons" element={<PickAddOns/>}/>
+        <Route path="Multi-Step-From/confirm" element={<FinishingUp/>}/>
+        <Route path="Multi-Step-From/success" element={<Success/>}/>
+        <Route path="*" element={<Navigate to="Multi-Step-From/subscription/register" replace={true}></Navigate>} />
       </Route>
-      <Route path="*" element={<Navigate to="subscription/register" replace={true}></Navigate>} />
+      <Route path="*" element={<Navigate to="Multi-Step-From/subscription/register" replace={true}></Navigate>} />
     </Routes>
     </SubscriptionContextProvider>
   </>
